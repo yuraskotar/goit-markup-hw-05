@@ -518,7 +518,28 @@ img {
   position: relative;
   overflow: hidden;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--secondary-text-color-dark);
+  padding: 62px 24px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms; leaner;
+}
+.work-link:hover .overlay {
+  transform: translateY(0%);
+}
 /* portfolio footer */
 .adres:hover,
 .adres:focus {
