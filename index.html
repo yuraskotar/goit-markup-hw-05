@@ -27,7 +27,7 @@
         <nav class="navigation">
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Студия</a>
+              <a class="nav-list-link link current" href="">Студия</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-list-link link" href="./portfolio.html"
@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="model-button" type="button">Заказать услугу</button>
+        <button class="model-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -125,14 +125,17 @@
         <ul class="about-item list">
           <li class="box">
             <img src="img/img1.jpg" alt="клавиатура" width="370" height="294" />
+          <p class="box-overlay" >Десктопные приложения</p>
           </li>
 
           <li class="box">
             <img src="img/img2.jpg" alt="ноут" width="370" height="294" />
+            <p class="box-overlay" >Мобильные приложенияния</p>
           </li>
 
           <li class="box">
             <img src="img/img3.jpg" alt="планшет" width="370" height="294" />
+            <p class="box-overlay" >Дизайнерские решения</p>
           </li>
         </ul>
         </div>
@@ -433,5 +436,15 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="18" height="18">
+              <use href="./img/sprite.svg#icon-close" ></use>
+            </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
